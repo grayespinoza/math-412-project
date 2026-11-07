@@ -1,0 +1,24 @@
+---
+x-defaults: &defaults
+  cap_drop:
+    - ALL
+  security_opt:
+    - no-new-privileges:true
+services:
+  typstyle:
+    <<: *defaults
+    image: grayespinoza/typstyle:v0.14.4
+    working_dir: /work
+    volumes:
+      - .:/work
+    command:
+      - presentation/412-presentation.typ
+  typst:
+    <<: *defaults
+    image: ghcr.io/typst/typst:0.15.1
+    working_dir: /work
+    volumes:
+      - .:/work
+    command:
+      - compile
+      - presentation/412-presentation.typ
