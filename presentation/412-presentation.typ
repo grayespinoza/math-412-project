@@ -3,7 +3,10 @@
 #import "@preview/theorion:0.6.0": *
 #import cosmos.fancy: *
 
-#show: simple-theme.with(aspect-ratio: "4-3")
+#show: simple-theme.with(
+  aspect-ratio: "4-3",
+  //config-common(show-notes-on-second-screen: right)
+)
 #show: show-theorion
 
 #show link: set text(fill: blue)
@@ -32,6 +35,11 @@
   We let $K_c$ denote the set of points with a bounded orbit for $f_c$. The boundary of $K_c$ is known as the _Julia set_ for the function $f_c$.
 ] <def:julia>
 #footnote[@hmca]
+#speaker-note[
+  + If the orbit is not bounded, we say it _escapes to infinity_.
+  + $K_c$ is referred to as the _filled Julia set_ for $f_c$.
+  + The _basin of infinity_ for $f_c$ is where the orbit escapes to infinity, i.e., the complement of filled Julia set.
+]
 
 == Julia Set Connectedness
 #proposition-box(outlined: false)[
