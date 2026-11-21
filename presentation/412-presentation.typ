@@ -65,6 +65,26 @@
 #pagebreak(weak: true)
 #proof[]
 
+== Characterization of Attracting Fixed Points
+#proposition-box(outlined: false)[
+  The function $f_c (z)=z^2+c$ has attracting fixed points if and only if $|1+sqrt(1-4c)|<1$ or $|1-sqrt(1-4c)|<1$, where the square root designates the principal square root function.
+]
+#footnote[@hmca, Theorem 4.11]
+#pagebreak(weak: true)
+#proof[]
+
+== Cycles
+#definition-box(outlined: false)[$n$-cycle][
+  An _$n$-cycle_ for a function $f$ is a set ${z_0, z_1, ..., z_(n-1)}$ of $n$ complex numbers such that $z_k=f(z_(k-1))$, for $1<=k<=n-1$ and $f(z_(n-1))=z_0$.
+] <def:cycle>
+#footnote[@hmca, Definition 4.11]
+
+== Attracting Cycles
+#definition-box(outlined: false)[Attracting $n$-cycles][
+  An $n$-cycle ${z_0, z_1, ..., z_(n-1)}$ for a function $f$ is said to be _attracting_ if $|g_n '(z_0)|<1$, where $g_n$ is the composition of $f$ with itself $n$ times.
+]
+#footnote[@hmca, Definition 4.12]
+
 == Source Code
 The code that was used to generate the fractal figures is available at: #link("https://github.com/grayespinoza/math-412-project/blob/main/scripts/")[github.com/grayespinoza/math-412-project]
 
