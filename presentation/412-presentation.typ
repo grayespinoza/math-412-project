@@ -5,7 +5,11 @@
 
 #show: simple-theme.with(
   aspect-ratio: "4-3",
-  //config-common(show-notes-on-second-screen: right)
+  config-common(
+    breakable: false,
+    clip: true,
+    //show-notes-on-second-screen: right
+  )
 )
 #show: show-theorion
 
