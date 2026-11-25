@@ -74,7 +74,9 @@
   + In fact, if $z_k$ is the $k$th iterate of $z in D_r^*(z_0)$, then $ limits(lim)_(k -> oo) z_k=z_0. $
 ]
 #pagebreak(weak: true)
-#proof[]
+#proof[
+  As $z_0$ is an attracting fixed point for $f$, we know $f$ is differentiable at $z_0$ and $ |f'(z_0)|<1. $ It follows for any $epsilon>0$, that there exists some $r>0$ such that if $z in D_r^*(z_0)$, then $ abs(frac(f(z)-f(z_0), z-z_0)-f'(z_0))<epsilon. $ Take $epsilon=1-|f'(z_0)|>0$, then for $z in D_r^*(z_0)$, we have $ abs(frac(f(z)-f(z_0), z-z_0)-f'(z_0))<1-|f'(z_0)|. $ Observe that, by the triangle inequality, we obtain $ abs(frac(f(z)-f(z_0), z-z_0))&<=abs(frac(f(z)-f(z_0), z-z_0)-f'(z_0))+|f'(z_0)|\ &<1-|f'(z_0)|+|f'(z_0)|\ &=1. $ Multiplying both sides by $|z-z_0|$, we obtain $ |f(z)-f(z_0)|<|z-z_0|. $ Consequently, as $z_0$ is a fixed point of $f$, it must be that $f(z_0)=z_0$, so $ |f(z)-z_0|<|z-z_0|. $
+]
 
 == Characterization of Attracting Fixed Points
 #proposition-box(outlined: false)[
@@ -82,7 +84,9 @@
 ]
 #footnote[@hmca, Theorem 4.11]
 #pagebreak(weak: true)
-#proof[]
+#proof[
+  Consider that $z_0$ is a fixed point for $f_c$ if and only if $f_c (z_0)=z_0$, i.e., if and only if $ z_0^2 -z_0+c=0. $ Then, by the quadratic formula, we obtain $ z_0=frac(1+sqrt(1-4c),2) quad "or" quad z_0=frac(1-sqrt(1-4c),2). $ Likewise, consider that $z_0$ is an attracting point for $f_c$ if and only if $|f_c '(z_0)|<1$. Observe that $f_c '(z)=2z$, so $ |f_c '(z_0)|=2z_0<1. $ Substituting the two previous solutions, we obtain $ |1+sqrt(1-4c)|<1 quad "or" quad |1-sqrt(1-4c)|<1. $ Consequently, $f_c (z)=z^2+c$ has attracting fixed points if and only if $ |1+sqrt(1-4c)|<1 quad "or" quad |1-sqrt(1-4c)|<1. $
+]
 
 == Cycles
 #definition-box(outlined: false)[$n$-cycle][
