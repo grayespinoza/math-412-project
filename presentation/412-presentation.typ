@@ -46,9 +46,8 @@
   The boundary of $K_c$ is connected if and only if $0 in K_c$. In other words, the Julia set of $f_c$ is connected if and only if the orbit of $0$ is bounded.
 ]
 #footnote[@hmca, Theorem 4.9]
-#pagebreak(weak: true)
-#set-qed-symbol[Q.E.D.]
-#proof[]
+#pagebreak()
+_Proof_. #h(1fr) Q.E.D.
 
 == Mandelbrot Set
 #definition-box(outlined: false)[Mandelbrot set][
@@ -73,20 +72,34 @@
 #speaker-note[
   + In fact, if $z_k$ is the $k$th iterate of $z in D_r^*(z_0)$, then $ limits(lim)_(k -> oo) z_k=z_0. $
 ]
-#pagebreak(weak: true)
-#proof[
-  As $z_0$ is an attracting fixed point for $f$, we know $f$ is differentiable at $z_0$ and $ |f'(z_0)|<1. $ It follows for any $epsilon>0$, that there exists some $r>0$ such that if $z in D_r^*(z_0)$, then $ abs(frac(f(z)-f(z_0), z-z_0)-f'(z_0))<epsilon. $ Take $epsilon=1-|f'(z_0)|>0$, then for $z in D_r^*(z_0)$, we have $ abs(frac(f(z)-f(z_0), z-z_0)-f'(z_0))<1-|f'(z_0)|. $ Observe that, by the triangle inequality, we obtain $ abs(frac(f(z)-f(z_0), z-z_0))&<=abs(frac(f(z)-f(z_0), z-z_0)-f'(z_0))+|f'(z_0)|\ &<1-|f'(z_0)|+|f'(z_0)|\ &=1. $ Multiplying both sides by $|z-z_0|$, we obtain $ |f(z)-f(z_0)|<|z-z_0|. $ Consequently, as $z_0$ is a fixed point of $f$, it must be that $f(z_0)=z_0$, so $ |f(z)-z_0|<|z-z_0|. $
-]
+#pagebreak()
+_Proof_. As $z_0$ is an attracting fixed point for $f$, we know $f$ is differentiable at $z_0$ and $ |f'(z_0)|<1.
+#pause
+$ It follows for any $epsilon>0$, that there exists some $r>0$ such that if $z in D_r^*(z_0)$, then $ abs(frac(f(z)-f(z_0), z-z_0)-f'(z_0))<epsilon. $
+#pause
+Take $epsilon=1-|f'(z_0)|>0$, then for $z in D_r^*(z_0)$, we have $ abs(frac(f(z)-f(z_0), z-z_0)-f'(z_0))<1-|f'(z_0)|. $
+#pagebreak()
+Observe that, by the triangle inequality, we obtain $ abs(frac(f(z)-f(z_0), z-z_0))&<=abs(frac(f(z)-f(z_0), z-z_0)-f'(z_0))+|f'(z_0)|\ &<1-|f'(z_0)|+|f'(z_0)|=1. $
+#pause
+Multiplying both sides by $|z-z_0|$, we obtain $ |f(z)-f(z_0)|<|z-z_0|. $
+#pause
+Consequently, as $z_0$ is a fixed point of $f$, it must be that $f(z_0)=z_0$, so $ |f(z)-z_0|<|z-z_0|. $ #h(1fr) Q.E.D.
 
 == Characterization of Attracting Fixed Points
 #proposition-box(outlined: false)[
   The function $f_c (z)=z^2+c$ has attracting fixed points if and only if $ |1+sqrt(1-4c)|<1 quad "or" quad |1-sqrt(1-4c)|<1, $ where the square root designates the principal square root function.
 ]
 #footnote[@hmca, Theorem 4.11]
-#pagebreak(weak: true)
-#proof[
-  Consider that $z_0$ is a fixed point for $f_c$ if and only if $f_c (z_0)=z_0$, i.e., if and only if $ z_0^2 -z_0+c=0. $ Then, by the quadratic formula, we obtain $ z_0=frac(1+sqrt(1-4c),2) quad "or" quad z_0=frac(1-sqrt(1-4c),2). $ Likewise, consider that $z_0$ is an attracting point for $f_c$ if and only if $|f_c '(z_0)|<1$. Observe that $f_c '(z)=2z$, so $ |f_c '(z_0)|=2z_0<1. $ Substituting the two previous solutions, we obtain $ |1+sqrt(1-4c)|<1 quad "or" quad |1-sqrt(1-4c)|<1. $ Consequently, $f_c (z)=z^2+c$ has attracting fixed points if and only if $ |1+sqrt(1-4c)|<1 quad "or" quad |1-sqrt(1-4c)|<1. $
-]
+#pagebreak()
+_Proof_. Consider that $z_0$ is a fixed point for $f_c$ if and only if $f_c (z_0)=z_0$, i.e., if and only if $ z_0^2 -z_0+c=0. $
+#pause
+Then, by the quadratic formula, we obtain $ z_0=frac(1+sqrt(1-4c),2) quad "or" quad z_0=frac(1-sqrt(1-4c),2). $
+#pause
+Likewise, consider that $z_0$ is an attracting point for $f_c$ if and only if $|f_c '(z_0)|<1$. Observe that $f_c '(z)=2z$, so $ |f_c '(z_0)|=2z_0<1. $
+#pagebreak()
+Substituting the two previous solutions, we obtain $ |1+sqrt(1-4c)|<1 quad "or" quad |1-sqrt(1-4c)|<1. $
+#pause
+Consequently, $f_c (z)=z^2+c$ has attracting fixed points if and only if $ |1+sqrt(1-4c)|<1 quad "or" quad |1-sqrt(1-4c)|<1. $ #h(1fr) Q.E.D.
 
 == Cycles
 #definition-box(outlined: false)[$n$-cycle][
