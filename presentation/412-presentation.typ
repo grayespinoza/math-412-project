@@ -70,6 +70,9 @@
   Suppose that $z_0$ is an attracting fixed point for the function $f$. Then there is a disk $D_r (z_0)$ about $z_0$ such that the iterates of all the points in $D_r^*(z_0)$ are drawn toward $z_0$ in the sense that, if $z in D_r^*(z_0)$, then $ |f(z)-z_0|<|z-z_0|. $
 ]
 #footnote[@hmca, Theorem 4.10]
+#speaker-note[
+  + In fact, if $z_k$ is the $k$th iterate of $z in D_r^*(z_0)$, then $ limits(lim)_(k -> oo) z_k=z_0. $
+]
 #pagebreak(weak: true)
 #proof[]
 
