@@ -54,6 +54,12 @@ _Proof_. #h(1fr) Q.E.D.
   We let $M$ denote the set of complex numbers $c$ for which the Julia set of $f_c$ is connected, or equivalently, for which the orbit of $0$ under $f_c$ is bounded. The set $M$ is known as the _Mandelbrot set_.
 ] <def:mandelbrot>
 #footnote[@hmca]
+#speaker-note[
+  + Julia sets and the Mandelbrot set arise from the same iterative function, $f_c (z)=z^2+c$.
+  + Julia sets fix $c$ and vary $z_0$.
+  + The Mandelbrot set fixes $z_0$ and varies $c$.
+  + The Mandelbrot set characterizes exactly which values of $c$ produce connected Julia sets.
+]
 
 == Points
 #definition-box(outlined: false)[Fixed point][
