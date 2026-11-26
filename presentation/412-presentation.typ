@@ -75,7 +75,7 @@
   + In fact, if $z_k$ is the $k$th iterate of $z in D_r^*(z_0)$, then $ limits(lim)_(k -> oo) z_k=z_0. $
 ]
 #pagebreak()
-_Proof_. As $z_0$ is an attracting fixed point for $f$, we know $f$ is differentiable at $z_0$ and $ |f'(z_0)|<1.
+_Proof_. As $z_0$ is an attracting point for $f$, we know $f$ is differentiable at $z_0$ and $ |f'(z_0)|<1.
 #pause
 $ It follows for any $epsilon>0$, that there exists some $r>0$ such that if $z in D_r^*(z_0)$, then $ abs(frac(f(z)-f(z_0), z-z_0)-f'(z_0))<epsilon. $
 #pause
@@ -97,7 +97,7 @@ _Proof_. Consider that $z_0$ is a fixed point for $f_c$ if and only if $f_c (z_0
 #pause
 Then, by the quadratic formula, we obtain $ z_0=frac(1+sqrt(1-4c),2) quad "or" quad z_0=frac(1-sqrt(1-4c),2). $
 #pause
-Likewise, consider that $z_0$ is an attracting point for $f_c$ if and only if $|f_c '(z_0)|<1$. Observe that $f_c '(z)=2z$, so $ |f_c '(z_0)|=2z_0<1. $
+Likewise, consider that $z_0$ is an attracting point for $f_c$ if and only if $|f_c '(z_0)|<1$. Observe that $f_c '(z)=2z$, so $ |f_c '(z_0)|=|2z_0|<1. $
 #pagebreak()
 Substituting the two previous solutions, we obtain $ |1+sqrt(1-4c)|<1 quad "or" quad |1-sqrt(1-4c)|<1. $
 #pause
