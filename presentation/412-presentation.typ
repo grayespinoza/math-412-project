@@ -38,6 +38,22 @@
   + $K_c$ is referred to as the _filled Julia set_ for $f_c$.
   + The _basin of infinity_ for $f_c$ is where the orbit escapes to infinity, i.e., the complement of filled Julia set.
 ]
+#pagebreak()
+#figure(
+  grid(
+    columns: 2,
+    column-gutter: 1em,
+    image("the-basilica.svg", width: 100%),
+    image("the-douady-rabbit.svg", width: 100%),
+  ),
+  caption: [
+    (a) The Basilica #h(4em) (b) The Douady Rabbit
+  ],
+)
+#speaker-note[
+  + The Basilica corresponds to $c=-1$.
+  + The Douady Rabbit corresponds to $c=-0.123+0.745i$.
+]
 
 == Julia Set Connectedness
 #theorem-box(outlined: false)[
@@ -56,6 +72,11 @@
   + The Mandelbrot set fixes $z_0$ and varies $c$.
   + The Mandelbrot set characterizes exactly which values of $c$ produce connected Julia sets.
 ]
+#pagebreak()
+#figure(
+  image("mandelbrot-set.svg", width: 75%),
+  caption: [The Mandelbrot set],
+)
 
 == Points
 #definition-box(outlined: false)[Fixed point][
