@@ -10,4 +10,4 @@ nf = mandelbrot(
 )
 
 plot(fatou(nf), bare=true)
-savefig("export/mandelbrot-set.png")
+savefig("export/mandelbrot-set.svg")
